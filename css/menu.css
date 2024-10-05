@@ -1,0 +1,48 @@
+#menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#04001D;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+}
+
+#menu .iconMenu img {
+  filter: invert(81%) sepia(68%) saturate(492%) hue-rotate(127deg) brightness(105%) contrast(100%);
+  width: 30px;
+}
+
+ .listaMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  position: absolute;
+  right: -180px;
+  top:80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:right 0.8s ease ;
+
+}
+.listaMenu.activeMenu{
+  right: 0;
+}
+
+#menu .containerImg img{
+  width: 60px;
+}
+
+#menu .listaMenu li{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+  
