@@ -71,3 +71,8 @@
   }
   
 }
+@media (min-width:1500px) {
+  #inicio{
+    margin-top: 2rem;
+  }
+}
