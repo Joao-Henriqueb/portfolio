@@ -1,0 +1,29 @@
+#projetos {
+  padding:0 2rem;
+}
+#projetos h2{
+  text-align: center;
+  margin-bottom: 3rem;
+ 
+}
+/*
+.containerProjetos{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  gap: 20px;
+
+}
+*/
+.cardProjeto{
+  border: 1px solid #1BF2F2;
+  padding: 2rem;
+  background-color: #04001D;
+  text-align: center;
+
+
+}
+
+.cardProjeto img {
+  max-width: 100%;
+}
