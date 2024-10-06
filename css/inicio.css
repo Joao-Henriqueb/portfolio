@@ -6,18 +6,40 @@
 }
 .apresentacao{
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .apresentacao h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.apresentacao span{
+.apresentacao .subTitulo{
   display: block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #1BF2F2;
   margin-bottom: 1rem;
+  border-right:  2px solid #1BF2F2;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: marcador 0.7s step-end infinite,escrever 4s steps(30,end);
 }
+@keyframes marcador{
+  50%{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes escrever{
+  0%{
+    width:0;
+  }
+  100%{
+    width:18ch;
+  }
+}
+
 .apresentacao .redes{
   display: flex;
   flex-direction: row;
@@ -45,11 +67,13 @@
   display: none;
 }
 
+
+
 @media (min-width:700px) {
   .apresentacao h1 {
     font-size: 3rem;
   }
-  .apresentacao span{
+  .apresentacao .subTitulo{
     font-size: 3rem;
 
   }
