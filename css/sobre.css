@@ -29,6 +29,7 @@
   
 }
 
+
 @media (min-width:1000px) {
   .sobreConteudo{
     width: 100%;
@@ -49,5 +50,12 @@
   }
   .containerJarvis img {
     width: 200px;
+    animation: rotate 4s linear infinite ;
+  }
+  @keyframes rotate {
+    100%{
+      transform: rotate(360deg);
+    }
+    
   }
 }
