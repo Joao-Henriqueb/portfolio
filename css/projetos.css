@@ -1,88 +1,104 @@
 #projetos {
-  padding:0 2rem;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
-#projetos h2{
+
+#projetos h2 {
   text-align: center;
   margin-bottom: 3rem;
- 
+  font-size: 1.8rem;
 }
-.content{
-  height: 520px;
-  width: 965px;
+
+.content {
+  width: 90%;
+  max-width: 1000px; /* Limita a largura máxima */
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-  
+  position: relative; /* Altera para relativo para manter a responsividade */
+  margin: 0 auto; /* Centraliza o conteúdo */
 }
-.navigation{
+.navigation {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.bar{
-  width: 70px;
-  height: 17px;
+
+.bar {
+  width: 50px; /* Ajusta o tamanho para ser mais responsivo */
+  height: 10px;
   border: 2px solid white;
   margin: 6px;
   border-radius: 5px;
   cursor: pointer;
-  transition: .3s;
-
+  transition: 0.3s;
 }
-.bar:hover{
+
+.bar:hover {
   background-color: white;
 }
-.slides input{
+
+.slides input {
   display: none;
 }
-.slides{
+
+.slides {
   display: flex;
   width: 500%;
   height: 100%;
+  transition: margin-left 0.6s;
 }
-.slide{
-  width: 20%;
-  transition: .6s;
+.slide .teste {
+  padding: 1rem;
+  text-align: center;
+  max-width: 300px;
+  position: absolute;
+  background-color:rgba(0, 0, 0, .5) ;
+  left: 20px;}
+.slide .teste h3 {
+  margin-bottom: 1rem;
 }
+.teste p{
+  margin-bottom: 1rem;
+}
+.teste .btn a{
+  padding: 0.5rem;
+}
+.slide {
+  width: 20%; /* Cada slide ocupa 20% do container, já que são 5 slides */
+}
+
 .slide img {
   width: 100%;
-  height: 100%;
+  height: 100%; /* Mantém a proporção da imagem */
+  display: block;
 }
-#slide1:checked ~ .s1{
+
+#slide1:checked ~ .s1 {
   margin-left: 0;
-
 }
-#slide2:checked ~ .s1{
+
+#slide2:checked ~ .s1 {
   margin-left: -20%;
-
 }
-#slide3:checked ~ .s1{
+
+#slide3:checked ~ .s1 {
   margin-left: -40%;
-
 }
-#slide4:checked ~ .s1{
+
+#slide4:checked ~ .s1 {
   margin-left: -60%;
-
 }
-#slide5:checked ~ .s1{
+
+#slide5:checked ~ .s1 {
   margin-left: -80%;
-
 }
-/*
-.content .slide img{
- max-width: 800px;
- width: 100%;
-}*/
+
+
 /*
 .containerProjetos{
   width: 100%;
@@ -92,14 +108,7 @@
 
 }
 
-.cardProjeto{
-  border: 1px solid #1BF2F2;
-  padding: 2rem;
-  background-color: #04001D;
-  text-align: center;
 
-
-}
 
 .cardProjeto img {
   max-width: 100%;
