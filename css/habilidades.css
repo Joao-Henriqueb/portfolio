@@ -1,0 +1,79 @@
+#habilidades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+#habilidades h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.HabilidadesContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  place-items: center;
+  
+}
+.HabilidadesContainer p {
+  font-size: 1.2rem;
+  color:#FFFFFF;
+  margin-top: 10px;
+}
+.habilidadeItem{
+  border-radius: 8px;
+  box-shadow:0 4px 6px rgba(0, 0, 0, 0.1) ;
+  padding: 2rem;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-color:#1C1F26;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+
+
+}
+.habilidadeItem:hover {
+  transform: scale(1.1);
+  border: 1px solid #1BF2F2;
+}
+.habilidadeItem img {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width:400px) {
+  .HabilidadesContainer{
+    gap: 1rem 0;
+  }
+  .habilidadeItem{
+    width: 180px;
+  }
+
+}
+  
+
+@media (min-width:700px) {
+  #habilidades{
+    padding: 0 2rem;
+  }
+  .habilidadeItem{
+    width: 150px;
+  }
+.HabilidadesContainer{
+  max-width: 1000px;
+  gap: 2rem;
+  grid-template-columns: repeat(4,1fr);
+}
+@media (min-width:1000px) {
+  .HabilidadesContainer{
+    max-width: 800px;
+  }
+
+
+}
+
